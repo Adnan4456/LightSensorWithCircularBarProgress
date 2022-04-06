@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() , SensorEventListener {
             // Event came from the light sensor.
             Sensor.TYPE_LIGHT ->
             {
-                binding.tvText.text =  "Sensor = $currentValue/n {brightness(currentValue)}"
+                binding.tvText.text =  "Sensor: $currentValue\n ${brightness(currentValue)}"
                 binding.circularbar.setProgressWithAnimation(currentValue)
             }
 
